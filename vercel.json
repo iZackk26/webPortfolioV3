@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      { "source": "/jieshop", "destination": "/index.html" },
+      { "source": "/bookdown", "destination": "/index.html" },
+      { "source": "/ai", "destination": "/index.html" },
+      { "source": "/(.*)", "destination": "/index.html" }
+    ]
+  }
+  
