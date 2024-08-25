@@ -60,6 +60,14 @@ const projects = [
     tags: ["SQL", "NodeJS", "Sequlize", "React", "TailwindCSS"],
     linkTo: "https://github.com/iZackk26/PuraCompra"
   },
+  {
+    id: 7,
+    title: "Ticket Manager",
+    description: "PuraCompra is an intermediary platform connecting users with online stores like Amazon, Best Buy, Micro Center, Walmart, and Gymshark. It offers menus for administrators and users, order tracking, and various features for an integrated shopping experience.",
+    image: "project/RustTicket.webp",
+    tags: ["Rust", "Sockets", "C#", "Tokio"],
+    linkTo: "https://github.com/iZackk26/Tickets-Manager"
+  },
 
 ];
 

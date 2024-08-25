@@ -12,36 +12,36 @@ export default function Jieshop() {
     {
       ProductsID: 1,
       name: "Apple Vision Pro",
-      description: "Descripción del producto 1",
-      img: "jieshop/appleVision.png" // Asegúrate de tener una URL válida
+      description: "A mixed-reality headset by Apple.",
+      img: "jieshop/appleVision.png" // Verifica que la URL sea válida
     },
     {
       ProductsID: 2,
       name: "MacBook M3 Pro",
-      description: "Descripción del producto 2",
-      img: "jieshop/macM3Pro.png" // Asegúrate de tener una URL válida
+      description: "A high-end model in the MacBook lineup.",
+      img: "jieshop/macM3Pro.png" // Verifica que la URL sea válida
     },
     {
       ProductsID: 3,
       name: "Yeezy Slides",
-      description: "Descripción del producto 1",
-      img: "jieshop/bone.png" // Asegúrate de tener una URL válida
+      description: "The softest slides by Yeezy, with cushioning.",
+      img: "jieshop/bone.png" // Verifica que la URL sea válida
     },
     {
       ProductsID: 4,
       name: "Wahl Professional",
-      description: "Descripción del producto 1",
-      img: "jieshop/dryer.png" // Asegúrate de tener una URL válida
+      description: "An iconic professional hair dryer.",
+      img: "jieshop/dryer.png" // Verifica que la URL sea válida
     },
     {
       ProductsID: 5,
       name: "Essentials",
-      description: "Descripción del producto 1",
-      img: "jieshop/essentials.png" // Asegúrate de tener una URL válida
+      description: "A brand known for top-quality materials.",
+      img: "jieshop/essentials.png" // Verifica que la URL sea válida
     },
     // Añade más productos según sea necesario
   ];
-
+  
   return (
     <>
       <Header />

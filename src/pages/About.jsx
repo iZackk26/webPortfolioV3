@@ -41,7 +41,7 @@ export default function About() {
                 <a href="https://github.com/iZackk26/Quantum_Computer" target="_blank" rel="noopener noreferrer">
                   <SiLatex size={33} />
                 </a>
-                <a href="https://www.rust-lang.org/" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/iZackk26/Tickets-Manager" target="_blank" rel="noopener noreferrer">
                   <DiRust size={33} />
                 </a>
                 <a href="https://github.com/iZackk26/PuraCompra" target="_blank" rel="noopener noreferrer">
