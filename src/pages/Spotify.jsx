@@ -32,7 +32,7 @@ export default function Spotify() {
 
 
   return (
-    <div className={`flex flex-col min-h-screen ${isDarkMode ? 'bg-black text-white' : 'bg-white text-black'}`}>
+    <div className={`flex flex-col min-h-screen py-24 ${isDarkMode ? 'bg-black text-white' : 'bg-white text-black'}`}>
       <Header />
       <main className={`flex-1 grid md:grid-cols-[300px_1fr] gap-4 pb-20 px-4 transition-colors duration-500 ease-in-out ${isDarkMode ? 'bg-black text-white' : 'bg-white text-black'}`}>
         <div className="flex justify-center items-start pt-3 pr-2">

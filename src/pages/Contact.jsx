@@ -8,7 +8,7 @@ export default function Contact() {
     return (
         <>
             <Header />
-            <div className={`transition-colors duration-500 ease-in-out min-h-screen ${isDarkMode ? 'bg-black text-white' : 'bg-white text-black'}`}>
+            <div className={`transition-colors duration-500 pt-24 ease-in-out min-h-screen ${isDarkMode ? 'bg-black text-white' : 'bg-white text-black'}`}>
                 <div className="flex flex-col md:flex-row p-6" data-aos="zoom-in" data-aos-duration="800">
                     <div className="md:w-1/2 flex flex-col items-center p-4">
                         <div className={`rounded-full h-32 w-32 flex items-center justify-center`}>

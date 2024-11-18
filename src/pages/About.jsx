@@ -16,7 +16,7 @@ export default function About() {
     return (
       <>
         <Header />
-        <div className={`transition-colors duration-500 ease-in-out ${isDarkMode ? 'bg-black' : 'bg-white'} py-20 sm:py-24 lg:py-32 min-h-screen`}>
+        <div className={`transition-colors duration-500 ease-in-out ${isDarkMode ? 'bg-black' : 'bg-white'} py-20 sm:py-24 lg:py-40 min-h-screen`}>
           <div className="container mx-auto px-12 sm:px-12 lg:px-20" data-aos="zoom-in" data-aos-duration="800">
             <h1 className="text-gray-900 dark:text-white text-xl sm:text-2xl font-bold pb-3 pt-2">
               Skills

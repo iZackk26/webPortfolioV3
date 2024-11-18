@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <Header />
       <IconContext.Provider value={{ color: isDarkMode ? 'white' : 'black' }}>
-        <div className={`transition-colors duration-500 ease-in-out ${isDarkMode ? 'bg-black' : 'bg-white'} pt-10 min-h-screen px-4 sm:px-6 lg:px-8`}>
+        <div className={`transition-colors duration-500 ease-in-out ${isDarkMode ? 'bg-black' : 'bg-white'} py-24 min-h-screen px-4 sm:px-6 lg:px-8`}>
           <div className="flex items-center gap-x-2 pb-5" data-aos="fade-right" data-aos-duration="1000">
             <h1 className={`transition-colors duration-500 ease-in-out text-5xl font-bold ${isDarkMode ? 'text-white' : 'text-black'}`}>
               Hey, I'm Isaac

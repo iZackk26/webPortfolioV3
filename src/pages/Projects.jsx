@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import { IoIosArrowDroprightCircle, IoIosArrowDropleftCircle } from "react-icons/io";
+import { Button, Drawer } from "flowbite-react";
 
 import { useTheme } from '../context/ThemeContext';
 import Header from '../components/header/Header'
@@ -63,17 +64,24 @@ const projects = [
   {
     id: 7,
     title: "Ticket Manager",
-    description: "PuraCompra is an intermediary platform connecting users with online stores like Amazon, Best Buy, Micro Center, Walmart, and Gymshark. It offers menus for administrators and users, order tracking, and various features for an integrated shopping experience.",
+    description: "This is a ticket manager that search the best seat in a whole stadium",
     image: "project/RustTicket.webp",
     tags: ["Rust", "Sockets", "C#", "Tokio"],
     linkTo: "https://github.com/iZackk26/Tickets-Manager"
+  },
+  {
+    title: "iFixIt",
+    description: "A web and mobile platform that streamlines automotive workshop management, enabling administrators to track repairs, manage orders and invoices, while customers can track their vehicle, schedule appointments, and find nearby workshops.",
+    image: "project/iFixIt.png",
+    tags: ["Postgresql", "NodeJS", "React", "TailwindCSS", "MUI", "Nativewind", "GoogleMaps", "Dotenv", "Heroku"],
+    linkTo: "https://github.com/iZackk26/iFixIt",
   },
 
 ];
 
 const ITEMS_PER_PAGE = 5;
 
-const categories = ["Neovim", "Python", "Java", "Web Scraping", "SQL"];
+const categories = ["Neovim", "Python", "Java", "Web Scraping", "SQL", "Flask", "NodeJS", "React", "TailwindCSS", "MUI", "Nativewind", "GoogleMaps", "Dotenv", "Heroku"];
 
 const recentPosts = [
   { title: 'Pura Compra Web App', imageUrl: 'project/puraCompra.jpg', linkTo: 'https://github.com/iZackk26/PuraCompra' },
@@ -81,7 +89,7 @@ const recentPosts = [
   { title: 'Catering Service V2', imageUrl: 'project/catering.jpg', linkTo: 'https://github.com/iZackk26/Catering-ServiceV2' }
 ];
 
-const tags = ["Neovim", "Python", "Java", "Web Scraping", "SQL", "Flask", "NodeJS", "React", "TailwindCSS"];
+const tags = ["Neovim", "Python", "Java", "Web Scraping", "SQL", "Flask", "NodeJS", "React", "TailwindCSS", "MUI", "Nativewind", "GoogleMaps", "Dotenv", "Heroku"];
 
 export default function Projects() {
   const { isDarkMode } = useTheme();
@@ -112,7 +120,7 @@ export default function Projects() {
   };
 
   return (
-    <div className={`flex flex-col min-h-screen transition-colors duration-500 ease-in-ou ${isDarkMode ? 'bg-black text-white' : 'bg-white text-black'}`}>
+    <div className={`flex flex-col min-h-screen pt-24 transition-colors duration-500 ease-in-ou ${isDarkMode ? 'bg-black text-white' : 'bg-white text-black'}`}>
       <Header />
       <main className={`container mx-auto grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-8 py-8 transition-colors duration-500 ease-in-out ${isDarkMode ? 'bg-black text-white' : 'bg-white text-black'}`} >
         <div key={currentPage} className="space-y-8">
