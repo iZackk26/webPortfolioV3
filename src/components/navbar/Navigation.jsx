@@ -23,7 +23,7 @@ const Navigation = () => {
         to="/projects"
         className="text-sm md:text-lg font-semibold text-gray-800 dark:text-gray-200 hover:underline"
       >
-        <FaProjectDiagram className="h-4 w-4 sm:h-4 sm:w-4 md:h-6 md:w-6 lg:h-6 lg:w-6" />
+        <FaProjectDiagram className="h-5 w-5 sm:h-4 sm:w-4 md:h-6 md:w-6 lg:h-6 lg:w-6" />
       </Link>
 
       {/* About Link */}
@@ -31,7 +31,7 @@ const Navigation = () => {
         to="/about"
         className="text-sm md:text-lg font-semibold text-gray-800 dark:text-gray-200 hover:underline"
       >
-        <AiOutlineInfoCircle className="h-4 w-4 sm:h-4 sm:w-4 md:h-6 md:w-6 lg:h-6 lg:w-6" />
+        <AiOutlineInfoCircle className="h-5 w-5 sm:h-4 sm:w-4 md:h-6 md:w-6 lg:h-6 lg:w-6" />
       </Link>
 
       {/* Contact Link */}
@@ -39,7 +39,7 @@ const Navigation = () => {
         to="/contact"
         className="text-sm md:text-lg font-semibold text-gray-800 dark:text-gray-200 hover:underline"
       >
-        <MdContactMail className="h-4 w-4 sm:h-4 sm:w-4 md:h-6 md:w-6 lg:h-6 lg:w-6" />
+        <MdContactMail className="h-5 w-5 sm:h-4 sm:w-4 md:h-6 md:w-6 lg:h-6 lg:w-6" />
       </Link>
 
       {/* Dark Mode Toggle */}
@@ -50,7 +50,7 @@ const Navigation = () => {
         }`}
         onClick={handleToggleTheme}
       >
-        <CgDarkMode className="h-4 w-4 sm:h-4 sm:w-4 md:h-6 md:w-6 lg:h-6 lg:w-6" />
+        <CgDarkMode className="h-5 w-5 sm:h-4 sm:w-4 md:h-6 md:w-6 lg:h-6 lg:w-6" />
       </button>
         
         {/* Language Switcher */}

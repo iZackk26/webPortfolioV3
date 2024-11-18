@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-1/2 transform -translate-x-1/2 w-3/4 bg-white bg-opacity-20 backdrop-blur-lg rounded-b-full px-6 py-3 shadow-lg z-50 transition-colors duration-500 ease-in-out ${
+      className={`fixed top-0 left-1/2 transform -translate-x-1/2 w-[95%] bg-white bg-opacity-20 backdrop-blur-lg rounded-b-full px-6 py-3 shadow-lg z-50 transition-colors duration-500 ease-in-out ${
         isDarkMode ? 'bg-black text-gray-50' : 'bg-white text-gray-900'
       }`}
     >
