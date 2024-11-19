@@ -8,6 +8,7 @@ import Bookdown from "./pages/Bookdown";
 import Jieshop from "./pages/Jieshop";
 import Ai from "./pages/Ai";
 import NotFound from "./components/NotFound/NotFound";
+import LoadingSpinner from "./components/spinners/LoadingSpinner";
 
 const Routing = () => (
     <Router>
@@ -20,6 +21,7 @@ const Routing = () => (
             <Route path="/jieshop" element={<Jieshop />} />
             <Route path="/bookdown" element={<Bookdown />} />
             <Route path="/ai" element={<Ai />} />
+            <Route path="/loading" element={<LoadingSpinner />} />
             <Route path="*" element={<NotFound />} />
         </Routes>
     </Router>

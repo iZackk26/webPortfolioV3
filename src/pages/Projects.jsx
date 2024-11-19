@@ -70,6 +70,7 @@ const projects = [
     linkTo: "https://github.com/iZackk26/Tickets-Manager"
   },
   {
+    id: 8,
     title: "iFixIt",
     description: "A web and mobile platform that streamlines automotive workshop management, enabling administrators to track repairs, manage orders and invoices, while customers can track their vehicle, schedule appointments, and find nearby workshops.",
     image: "project/iFixIt.png",
@@ -128,11 +129,11 @@ export default function Projects() {
         <div key={currentPage} className="space-y-8">
           {currentProjects.map((project) => (
             <ProjectItem
-              key={project.id}
+              key={project.id - 1}
               project={{
                 ...project,
-                title: t(`projects.${project.id}.title`),
-                description: t(`projects.${project.id}.description`)
+                title: t(`projects.${project.id - 1}.title`),
+                description: t(`projects.${project.id - 1}.description`)
               }}
             />
           ))}
