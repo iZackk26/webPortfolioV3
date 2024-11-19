@@ -1,0 +1,49 @@
+{
+    "categories": "Categories",
+    "recentPosts": "Recent Posts",
+    "tags": "Tags",
+    "pageInfo": "Page {{current}} of {{total}}",
+    "projects": [
+      {
+        "id": 1,
+        "title": "My Neovim Configs",
+        "description": "My personal Neovim configurations for web development, Python, and more. Includes plugins, key mappings, and custom settings."
+      },
+      {
+        "id": 2,
+        "title": "PyHandler",
+        "description": "This project revolves around the seamless uploading and downloading of files to and from cloud storage. The aim is to provide an efficient solution that complements the Assembly project's file management requirements."
+      },
+      {
+        "id": 3,
+        "title": "Restaurant Handler",
+        "description": "This project is a java application that allows users to view and order food from a restaurant. It includes both user and admin interfaces."
+      },
+      {
+        "id": 4,
+        "title": "Enterprise Manager",
+        "description": "An inventory management system designed to handle products using various data structures, allowing CRUD operations efficiently."
+      },
+      {
+        "id": 5,
+        "title": "Video Games Web Scraper",
+        "description": "A tool to streamline the search and comparison of video game prices across multiple platforms like G2A, Instant Gaming, and PS4 Store."
+      },
+      {
+        "id": 6,
+        "title": "Pura Compra",
+        "description": "An intermediary platform connecting users with online stores like Amazon, Best Buy, and Walmart, offering order tracking and an integrated shopping experience."
+      },
+      {
+        "id": 7,
+        "title": "Ticket Manager",
+        "description": "A ticket manager that finds the best seat in a stadium."
+      },
+      {
+        "id": 8,
+        "title": "iFixIt",
+        "description": "A web and mobile platform that streamlines automotive workshop management, enabling administrators to track repairs and manage orders."
+      }
+    ]
+  }
+  

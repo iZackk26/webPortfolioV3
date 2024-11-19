@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import { IoIosArrowDroprightCircle, IoIosArrowDropleftCircle } from "react-icons/io";
-import { Button, Drawer } from "flowbite-react";
+import { useTranslation } from "react-i18next"; // Importa el hook
 
 import { useTheme } from '../context/ThemeContext';
 import Header from '../components/header/Header'
@@ -96,6 +96,8 @@ export default function Projects() {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedTag, setSelectedTag] = useState(null);
 
+  const { t } = useTranslation("projects");
+
   const totalPages = Math.ceil(projects.length / ITEMS_PER_PAGE);
 
   const filteredProjects = selectedTag
@@ -125,12 +127,19 @@ export default function Projects() {
       <main className={`container mx-auto grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-8 py-8 transition-colors duration-500 ease-in-out ${isDarkMode ? 'bg-black text-white' : 'bg-white text-black'}`} >
         <div key={currentPage} className="space-y-8">
           {currentProjects.map((project) => (
-            <ProjectItem key={project.id} project={project} />
+            <ProjectItem
+              key={project.id}
+              project={{
+                ...project,
+                title: t(`projects.${project.id}.title`),
+                description: t(`projects.${project.id}.description`)
+              }}
+            />
           ))}
         </div>
         <div className="px-6 space-y-8">
           <div className="space-y-4">
-            <h3 className="text-lg font-bold">Categories</h3>
+            <h3 className="text-lg font-bold">{t("categories")}</h3>
             <div className="grid grid-cols-2 gap-2">
               {categories.map((category) => (
                 <a key={category} className="text-sm font-medium hover:underline underline-offset-4">
@@ -140,7 +149,7 @@ export default function Projects() {
             </div>
           </div>
           <div className="space-y-4">
-            <h3 className="text-lg font-bold">Recent Posts</h3>
+            <h3 className="text-lg font-bold">{t("recentPosts")}</h3>
             <div className="space-y-2">
               {recentPosts.map((post) => (
                 <Link key={post.title} to={post.linkTo} className="flex items-center space-x-2 text-sm font-medium hover:underline underline-offset-4">
@@ -148,7 +157,7 @@ export default function Projects() {
                     src={post.imageUrl}
                     width={50}
                     height={50}
-                    alt="Recent Post Image"
+                    alt={post.title}
                     className="rounded-lg object-cover"
                   />
                   <span>{post.title}</span>
@@ -157,7 +166,7 @@ export default function Projects() {
             </div>
           </div>
           <div className="space-y-4">
-            <h3 className="text-lg font-bold">Tags</h3>
+            <h3 className="text-lg font-bold">{t("tags")}</h3>
             <div className="flex flex-wrap gap-2">
               {tags.map((tag) => (
                 <button
@@ -181,7 +190,7 @@ export default function Projects() {
           <IoIosArrowDropleftCircle size={24} />
         </button>
         <span className="px-4 py-2">
-          Page {currentPage} of {totalPages}
+          {t("pageInfo", { current: currentPage, total: totalPages })}
         </span>
         <button
           onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
@@ -194,4 +203,5 @@ export default function Projects() {
       <Footer />
     </div>
   );
+  
 }

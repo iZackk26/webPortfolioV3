@@ -1,0 +1,49 @@
+{
+    "categories": "Categorías",
+    "recentPosts": "Publicaciones Recientes",
+    "tags": "Etiquetas",
+    "pageInfo": "Página {{current}} de {{total}}",
+    "projects": [
+      {
+        "id": 1,
+        "title": "Mis Configuraciones de Neovim",
+        "description": "Mis configuraciones personales de Neovim para desarrollo web, Python y más. Incluye plugins, atajos de teclado y configuraciones personalizadas."
+      },
+      {
+        "id": 2,
+        "title": "PyHandler",
+        "description": "Proyecto para cargar y descargar archivos desde almacenamiento en la nube, proporcionando una solución eficiente para la gestión de archivos."
+      },
+      {
+        "id": 3,
+        "title": "Gestor de Restaurante",
+        "description": "Aplicación en Java que permite a los usuarios ver y ordenar comida. Incluye interfaces de usuario y administrador."
+      },
+      {
+        "id": 4,
+        "title": "Gestor Empresarial",
+        "description": "Sistema de gestión de inventarios que maneja productos usando estructuras de datos, permitiendo operaciones CRUD de manera eficiente."
+      },
+      {
+        "id": 5,
+        "title": "Web Scraper de Videojuegos",
+        "description": "Herramienta para buscar y comparar precios de videojuegos en plataformas como G2A, Instant Gaming y PS4 Store."
+      },
+      {
+        "id": 6,
+        "title": "Pura Compra",
+        "description": "Plataforma que conecta a usuarios con tiendas en línea como Amazon, Best Buy y Walmart, ofreciendo seguimiento de pedidos y una experiencia integrada."
+      },
+      {
+        "id": 7,
+        "title": "Gestor de Tickets",
+        "description": "Gestor de entradas que encuentra el mejor asiento en un estadio."
+      },
+      {
+        "id": 8,
+        "title": "iFixIt",
+        "description": "Plataforma web y móvil para gestionar talleres automotrices, permitiendo a los administradores rastrear reparaciones y gestionar pedidos."
+      }
+    ]
+  }
+  

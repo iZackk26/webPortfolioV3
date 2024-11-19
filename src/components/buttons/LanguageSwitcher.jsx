@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const defaultLanguages = [
   {
@@ -11,23 +12,20 @@ const defaultLanguages = [
     name: "Español",
     icon: "flags/es.svg",
   },
-  {
-    code: "fr",
-    name: "Français",
-    icon: "flags/fr.svg",
-  },
 ];
 
 // eslint-disable-next-line react/prop-types
-export default function LanguageSwitcher({ languages = defaultLanguages, onLanguageChange = () => {} }) {
-  const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
+export default function LanguageSwitcher({ languages = defaultLanguages }) {
+  const { i18n } = useTranslation(); // Acceso a i18next
+  const currentLanguage = i18n.language; // Idioma actual de i18next
   const [isOpen, setIsOpen] = useState(false); // Estado para controlar la visibilidad del menú
 
   const handleLanguageChange = (language) => {
-    setSelectedLanguage(language);
-    onLanguageChange(language.code);
+    i18n.changeLanguage(language.code); // Cambiar idioma con i18next
     setIsOpen(false); // Cierra el menú al seleccionar un idioma
   };
+
+  const selectedLanguage = languages.find((lang) => lang.code === currentLanguage) || languages[0];
 
   return (
     <div className="relative inline-block">
@@ -43,14 +41,14 @@ export default function LanguageSwitcher({ languages = defaultLanguages, onLangu
       </button>
 
       {/* Dropdown Menu */}
-      {isOpen && ( // Solo muestra el menú si `isOpen` es true
+      {isOpen && (
         <div className="absolute right-0 mt-5 w-40 rounded-md bg-white shadow-lg dark:bg-gray-900">
           <ul className="py-1">
             {languages.map((language) => (
               <li
                 key={language.code}
                 className={`flex items-center px-4 py-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 ${
-                  selectedLanguage.code === language.code
+                  currentLanguage === language.code
                     ? "bg-gray-200 dark:bg-gray-700"
                     : ""
                 }`}
