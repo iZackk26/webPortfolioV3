@@ -102,7 +102,7 @@ export default function Contact() {
 
 
       {/* Projects */}
-      <section className="mb-10">
+      <section className="mb-10 p-4">
         <h2 className="text-xl font-semibold uppercase tracking-wider">Projects</h2>
         {[
           { title: "PuraCompra", desc: "Intermediary platform connecting users with online stores like Amazon, Best Buy, Walmart, etc." },

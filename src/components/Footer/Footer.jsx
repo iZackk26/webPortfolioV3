@@ -29,6 +29,11 @@ export default function Footer() {
                 Spotify
               </Link>
             </li>
+            <li>
+              <Link to="/setup" className="text-sm mr-4 md:mr-6 hover:underline md:text-lg text-gray-900 dark:text-gray-100">
+                SetUp
+              </Link>`
+            </li>
           </ul>
         </div>
         <hr className="my-6 border-gray-200 dark:border-gray-700" />
