@@ -32,7 +32,7 @@ export default function Footer() {
             <li>
               <Link to="/setup" className="text-sm mr-4 md:mr-6 hover:underline md:text-lg text-gray-900 dark:text-gray-100">
                 SetUp
-              </Link>`
+              </Link>
             </li>
           </ul>
         </div>

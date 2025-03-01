@@ -3,6 +3,7 @@ import { Tab } from "@headlessui/react"
 import { useTheme } from "../context/ThemeContext"
 import Header from "../components/header/Header" // 👈 Importamos el Header
 import Accessories from "../components/accesories/Accesories"
+import Footer from "../components/Footer/Footer"
 
 export default function SetupShowcase() {
   const [activeTab, setActiveTab] = useState(0)
@@ -121,6 +122,8 @@ export default function SetupShowcase() {
         </section>
       </div>
       <Accessories /> {/* 👈 Se coloca el componente Accessories aquí */}
+
+      <Footer />
     </div>
   )
 }
