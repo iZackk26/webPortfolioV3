@@ -9,7 +9,10 @@ export default function JieshopCarrousel({ products }) {
     <Swiper
       spaceBetween={12}
       slidesPerView={1}
-      navigation
+      navigation={{
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }}
       modules={[Navigation]}
       breakpoints={{
         640: {
@@ -28,8 +31,8 @@ export default function JieshopCarrousel({ products }) {
           <div className="p-4 rounded shadow mb-4 cursor-pointer">
             <div className="w-full h-48 mb-4 overflow-hidden flex justify-center items-center">
               <img 
-                src={product.img} // Utiliza product.img
-                alt={product.name} // Asegúrate de tener un alt descriptivo
+                src={product.img} 
+                alt={product.name} 
                 className="object-contain max-h-full"
               />
             </div>
@@ -38,6 +41,10 @@ export default function JieshopCarrousel({ products }) {
           </div>
         </SwiperSlide>
       ))}
+
+      {/* Personalización de las flechas */}
+      <div className="swiper-button-next !w-4 !h-4 !text-black !opacity-80 hover:!opacity-100"></div>
+      <div className="swiper-button-prev !w-4 !h-4 !text-black !opacity-80 hover:!opacity-100"></div>
     </Swiper>
   );
 }

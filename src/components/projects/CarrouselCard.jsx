@@ -14,28 +14,31 @@ const cardData = [
     title: 'JieShop',
     description: 'Intermediary between the customer and the store, that allows the customer to buy products from different stores in USA',
     navigateTo: 'jieshop',
+    tags: ['React', 'Node.js', 'Express'],
   },
   {
     image: 'project/book.webp',
     title: 'Bookdown Book',
     description: 'Project made on R, a book about the use of R in the field of data science and statistics.',
     navigateTo: 'bookdown',
+    tags: ['R', 'Data Science', 'Statistics'],
   },
   {
     image: 'project/Humanoide.webp',
     title: 'Artificial Intelligence',
     description: 'Project made on Python, using OpenCV and TensorFlow to detect and recognize objects in real time.',
     navigateTo: 'ai',
+    tags: ['Python', 'OpenCV', 'TensorFlow'],
   },
   {
     image: 'project/dots.webp',
     title: 'More Soon!',
     description: 'I will update this project section soon with more of my projects. Stay tuned for updates!',
     navigateTo: '',
+    tags: [],
   },
-
-  // Agrega más datos según sea necesario
 ];
+
 
 export default function CarrouselCard() {
   const { isDarkMode } = useTheme();
@@ -82,7 +85,7 @@ export default function CarrouselCard() {
         >
           {cardData.map((card, index) => (
             <SwiperSlide key={index} className="flex">
-              <Card image={card.image} title={card.title} description={card.description} navigateTo={card.navigateTo} />
+              <Card image={card.image} title={card.title} description={card.description} navigateTo={card.navigateTo} tags={card.tags} />
             </SwiperSlide>
           ))}
         </Swiper>

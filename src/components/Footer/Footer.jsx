@@ -33,7 +33,7 @@ export default function Footer() {
         </div>
         <hr className="my-6 border-gray-200 dark:border-gray-700" />
         <div className="text-center">
-          <span className="block text-sm">© 2024 <a href="/" className="hover:underline">Isaac™</a>. All Rights Reserved.</span>
+          <span className="block text-sm">© 2025 <a href="/" className="hover:underline">Isaac™</a>. All Rights Reserved.</span>
           <span className="block text-sm"><a href="https://github.com/iZackk26/webPortfolioV3" className="hover:underline">This web portfolio is almost finished and will be updated weekly. Check for updates on my GitHub</a></span>
         </div>
       </div>
