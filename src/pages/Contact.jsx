@@ -197,6 +197,18 @@ export default function Contact() {
         </div>
       </section>
 
+      <div className="pt-3">
+        <a
+          href="CV.pdf"
+          download
+          className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-[#614385] to-[#516395] group-hover:from-[#614385] group-hover:to-[#516395] hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-[#614385]/50 dark:focus:ring-[#516395]/50 hover:shadow-lg hover:shadow-[#614385]/50 hover:shadow-[#516395]/50"
+        >
+          <span className="relative px-3 py-1.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+            {t("downloadCV")}
+          </span>
+        </a>
+      </div>
+
 
       {/* Footer */}
       <Footer />
