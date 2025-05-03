@@ -75,7 +75,7 @@ const projects = [
     description: "A web and mobile platform that streamlines automotive workshop management, enabling administrators to track repairs, manage orders and invoices, while customers can track their vehicle, schedule appointments, and find nearby workshops.",
     image: "project/iFixIt.png",
     tags: ["Postgresql", "NodeJS", "React", "TailwindCSS", "MUI", "Nativewind", "GoogleMaps", "Dotenv", "Heroku"],
-    linkTo: "https://github.com/iZackk26/iFixIt",
+    linkTo: "https://i-fix-it.vercel.app/",
   },
 
 ];
